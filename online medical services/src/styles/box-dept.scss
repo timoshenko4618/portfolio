@@ -1,0 +1,127 @@
+.box-dept{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 71px 24px;
+  justify-content: flex-end;
+}
+
+.box-dept--aesthetic{  
+  background: linear-gradient(rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0.32)), url(./assets/img/1.jpg);
+}
+
+.box-dept--dermatologic{ 
+  background: linear-gradient(rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0.32)), url(./assets/img/2.jpg);
+}
+
+.box-dept--pediatric{
+  background: linear-gradient(rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0.32)), url(./assets/img/3.jpg);
+}
+
+.box-dept__name-wrap{
+  display: flex;
+  flex-direction: column;
+}
+
+.box-dept__name-wrap--aesthetic{
+  align-items: flex-start;
+}
+
+.box-dept__name{
+  display: block;
+  height: auto;  
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 23px;
+  line-height: 35px;  
+  letter-spacing: 0.25px;
+  background-color: transparent;
+  color: #fff;
+  z-index: 1;  
+}
+
+.box-dept__subtitle{
+  display: block;
+  height: auto;
+  padding-top: 3px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 20px;    
+  letter-spacing: 0.25px;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.box-dept__label{
+  display: block;  
+  background-color: transparent;
+  color: #fff;
+}
+
+.box-dept__label--dermatologic{  
+  padding-bottom: 24px;  
+}
+
+.box-dept__label--aesthetic{  
+  padding-bottom: 25px;  
+}
+
+.box-dept__label--pediatric{  
+  padding-bottom: 23px;  
+}
+
+@media screen and (max-width: $width_480){
+  .box-dept{
+    height: 100px;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 20px 67px;
+  }
+
+  .box-dept--dermatologic{ 
+      background: linear-gradient(to right, rgba(100, 100, 100, 1.0) 0%, rgba(100, 100, 100, 1.0) 50% ,rgba(0, 0, 0, 0.1)), url(./assets/img/2_small.jpg);
+  }
+
+  .box-dept--aesthetic{
+    flex-direction: row-reverse;  
+    background: linear-gradient(to left, rgba(100, 100, 100, 1.0) 0%, rgba(100, 100, 100, 1.0) 50% ,rgba(0, 0, 0, 0.1)), url(./assets/img/1_small.jpg);  
+  }  
+  
+  .box-dept--pediatric{
+    background: linear-gradient(to right, rgba(100, 100, 100, 1.0) 0%, rgba(100, 100, 100, 1.0) 50% ,rgba(0, 0, 0, 0.1)), url(./assets/img/3_small.jpg);
+  }
+
+  .box-dept__name-wrap{
+    margin: 0 50px;
+  }
+
+  .box-dept__name-wrap--aesthetic{
+    align-items: flex-end;
+  }
+
+  .box-dept__name{
+    font-size: 30px; 
+  }
+
+  .box-dept__subtitle{    
+    font-size: 20px;
+  }
+
+  .box-dept__label--dermatologic{  
+    padding-bottom: 0;  
+  }
+
+  .box-dept__label--aesthetic{      
+    padding-bottom: 0;  
+  }
+
+  .box-dept__label--pediatric{  
+    padding-bottom: 0;  
+  }
+}
+
+
