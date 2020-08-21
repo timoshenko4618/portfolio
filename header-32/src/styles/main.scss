@@ -1,0 +1,57 @@
+.main {    
+    width: 100vw;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding-left: 120px ;  
+    padding-top: 144px;
+    background-color:  #ffffff;
+    background-image: url(./assets/img/background_near.svg), url(./assets/img/background_middle.svg), url(./assets/img/background_back.svg);
+    background-size: 100%, 100%, 100%;
+    background-repeat: no-repeat;
+    background-position: top right, top right, top right;
+
+    &__info {
+        margin: 0;
+    }
+
+    &__header {
+        &-primary {
+            font-weight: 200;
+            font-size: 93px;
+            line-height: 140px;
+            letter-spacing: -1.5px;            
+            color: rgba(0, 0, 0, 0.38);             
+        }
+
+        &-secondary {
+            font-weight: 800;
+            font-size: 56px;
+            line-height: 85px;
+            letter-spacing: -0.5px;
+            color: #03DAC4;
+        }
+    }
+}
+
+@media screen and (max-width: $width_1100) {
+
+    .main {
+        background-size: 90%, 90%, 90%;
+        padding-left: 60px ;  
+        padding-top: 40px; 
+
+        &__header {
+            &-primary {
+                font-size: 80px; 
+                line-height: 100px;      
+            }
+    
+            &-secondary {
+                font-size: 48px;
+                line-height: 60px;
+            }
+        }
+    }
+
+}
+
