@@ -1,0 +1,70 @@
+.icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 47px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    &__comments svg path{
+        fill: #000;
+
+        .icon:hover & {
+            fill: #f0f;
+        }
+    }
+
+    &__location svg path {
+        fill: #000;
+
+        .icon:hover & {
+            fill: #08f;
+        }
+    }    
+
+    &__marker svg path {
+        fill: #000;
+
+        .icon:hover & {
+            fill: #ff0;
+        }
+    }
+
+    &__phone svg path {
+        fill: #000;
+
+        .icon:hover & {
+            fill: #0a0;
+        }
+    }
+
+    &__youtube svg path {
+        fill: #000;
+
+        .icon:hover & {
+            fill: #f00;
+        }
+    }
+
+    &__wrap {
+        display: flex;
+        flex-direction: row;
+        padding: 5px;
+        background: #fff;
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+}
+
+@media screen and (max-width: $width_550){
+    .icon {
+        &__wrap {
+            width: 100%;
+            padding: 20px;
+            bottom: 0;
+            position: fixed;
+            justify-content: space-between;
+        }
+    }
+}
+
