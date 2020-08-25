@@ -12,6 +12,7 @@
 
         .icon:hover & {
             fill: #f0f;
+            fill-opacity: 1.0;
         }
     }
 
@@ -20,6 +21,7 @@
 
         .icon:hover & {
             fill: #08f;
+            fill-opacity: 1.0;
         }
     }    
 
@@ -27,7 +29,8 @@
         fill: #000;
 
         .icon:hover & {
-            fill: #ff0;
+            fill: #00f;
+            fill-opacity: 1.0;
         }
     }
 
@@ -35,7 +38,8 @@
         fill: #000;
 
         .icon:hover & {
-            fill: #0a0;
+            fill: #590;
+            fill-opacity: 1.0;
         }
     }
 
@@ -44,6 +48,7 @@
 
         .icon:hover & {
             fill: #f00;
+            fill-opacity: 1.0;
         }
     }
 
