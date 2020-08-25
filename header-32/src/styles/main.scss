@@ -2,22 +2,20 @@
     width: 100vw;
     min-height: 100vh;
     margin: 0 auto;
-    padding: 144px 121px 57px 120px;
+    padding: 144px 0 57px 0;
     // padding-left: 120px ;  
     // padding-top: 144px;
     background-color:  #ffffff;
-    background-image: url(./assets/img/background_near.svg), url(./assets/img/background_middle.svg), url(./assets/img/background_back.svg);
-    background-size: 100%, 100%, 100%;
+    // background-image: url(./assets/img/background_near.svg), url(./assets/img/background_middle.svg), url(./assets/img/background_back.svg);
+    background-image: url(./assets/img/art.svg);
+    background-size: auto 100%;
+    // background-size: 100%, 100%, 100%;
     background-repeat: no-repeat;
-    background-position: top right, top right, top right;
+    background-position: top right;
+    // background-position: top right, top right, top right;
 
-    &__button {        
-        width: 180px;
-        height: 48px;
-        margin-top: 16px;        
-        padding: 10px;
-        text-align: center;
-        background: #3B00DD;
+    &__button {
+        margin-top: 16px; 
     }
 
     &__icons {
@@ -29,7 +27,12 @@
     }
 
     &__info {
-        margin: 0;
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     &__header {
@@ -79,7 +82,7 @@
 
 @media screen and (max-width: $width_1100) {
     .main {
-        background-size: 90%, 90%, 90%;
+        background-size: 90%;
         padding-left: 60px ;  
         padding-top: 40px; 
 
