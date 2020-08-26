@@ -1,6 +1,13 @@
 .link {
 
-    &__view-project {
+    margin-right: 47px;
+    
+    &:last-child {
+        margin-right: 0;
+    }
+
+
+    &__button {
         display: flex;
         min-width: 180px;
         height: 48px;      
@@ -15,9 +22,53 @@
         text-decoration: none;  
         align-items: center;
         justify-content: center;
-    }    
+     }    
     
-    // &__icon {
 
-    // }        
+     &__comments {
+        color: rgba(0,0,0, 0.38);
+
+        &:hover  {
+            color: rgb(255, 0, 0);
+        }    
+    }
+
+    &__location {
+        color: rgba(0,0,0, 0.38);
+
+        &:hover {
+            color: #08f;
+        } 
+    }    
+
+    &__marker {
+        color: rgba(0,0,0, 0.38);
+
+
+        &:hover {
+            color: #00f;
+        }
+    }
+
+    &__phone {
+        color: rgba(0,0,0, 0.38);
+
+        &:hover {
+            color: #590;
+        }
+    }
+
+    &__youtube {
+        color: rgba(0,0,0, 0.38);
+
+        &:hover {
+            color: #f00;
+        }
+    }       
+}
+
+@media screen and (max-width: $width_550){
+    .link {
+        margin-right: 0;
+    }
 }
