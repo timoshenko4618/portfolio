@@ -1,4 +1,5 @@
 $width_480: 480px;
+$width_1350: 1350px;
 
 * {
   box-sizing: border-box;
@@ -9,4 +10,5 @@ body {
   font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: normal;
+  overflow-x: hidden;
 }
