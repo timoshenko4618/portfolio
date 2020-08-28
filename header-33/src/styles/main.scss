@@ -2,20 +2,22 @@
     width: 100vw;
     min-height: 100vh;    
     margin: 0 auto;    
-    padding: 0 120px;
+    padding: 191px 120px 0;
     background-image: url(./assets/img/peoples.svg),  url(./assets/img/rectangle.svg);
-    background-size: 63%, 27%;
+    background-size: contain, 33%;
     background-repeat: no-repeat;
     background-position: bottom right, top left;
     // outline: 3px solid red;    
 
     &__info {
         display: flex;
-        flex-direction: column;        
+        flex-direction: column;   
+        max-width: 1440px;
+        margin: 0 auto;
     }
 
     &__header {        
-        margin: 191px auto 18px 0;
+        // margin: 0 auto 18px 0;
         font-weight: 800;
         font-size: 57px;
         line-height: 85px;
@@ -26,23 +28,19 @@
     &__text {
         width: 384px;
         height: auto;
-        margin: 0 auto 44px 0;
+        margin-top: 18px;
         font-size: 15px;
         line-height: 24px;
         letter-spacing: 0.15px;
         color: rgba(0, 0, 0, 0.6);
     }
 
-    &__button{        
-        width: 180px;
-        height: 48px;
-        background: #3B00DD;
-        padding: 10px;           
-        text-align: center;  
+    &__button {  
+        margin-top: 44px;       
     }
 
     &__subheader {
-        margin: 108px auto 16px 0;
+        margin-top: 108px;
         width: 384px;
         height: 64px;
         font-size: 23px;
@@ -63,7 +61,7 @@
 
 @media screen and (max-width: $width_1350){
     .main {
-        background-size: 50%, 27%;
+        background-size: contain, 27%;
         padding: 0 60px;
 
         &__header {        
@@ -79,15 +77,17 @@
         min-width: 100vw;
         height: 100vh;
         padding: 0 20px;
-        // background-image: url(./assets/img/peoples.svg),  url(./assets/img/rectangle.svg);
-        background-size: 100%, 30%;
+        background-size: 80%, 30%;
         background-repeat: no-repeat;
-        background-position: bottom right, top left;
+        background-position: bottom left, top center;
+
+            &__button {
+                margin: 44px auto 0;
+            }
         
 
             &__header {             
-                margin-top: 60px;
-                margin-left: auto;
+                margin-top: 30px;
                 text-align: center;
             }    
             &__subheader {          
