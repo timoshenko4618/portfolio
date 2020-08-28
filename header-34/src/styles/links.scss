@@ -1,22 +1,42 @@
-.link__read-more {
-    font-size: 13px;
-    line-height: 16px;
-    text-align: center;    
-    letter-spacing: 1.25px;
-    text-transform: uppercase;
-    color: #000000;
-    text-decoration: none;      
+.link {
+
+    width: 180px;
+    margin-right: 24px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    &--app-store {
+        background-image: url(./assets/img/App_Store_icon.svg);
+    }
+
+    &--google-play {
+        background-image: url(./assets/img/Google_Play_icon.svg);
+    }
+
+    &__button {
+        padding: 16px 34px;
+        text-align: center;
+        background: #FAFAFA;
+        font-size: 13px;
+        line-height: 16px;
+        text-align: center;    
+        letter-spacing: 1.25px;
+        text-transform: uppercase;
+        color: #000000;
+        text-decoration: none;      
+
+    }
+
 }
 
-.link__app-store {
-   width: 180px; 
-   background-image: url(./assets/img/App_Store_icon.svg);
+@media screen and (max-width: $width_480) {
+    .link {
+        margin-right: 0;
+    }
 }
 
-.link__google-play {
-    width: 180px; 
-    background-image: url(./assets/img/Google_Play_icon.svg);
-}
 
 
 
