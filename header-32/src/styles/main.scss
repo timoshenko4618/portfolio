@@ -82,8 +82,21 @@
     }
 }
 
-@media screen and (max-width: $width_1100) {
+@media screen and (max-height: $height_750) {
     .main {
+        // background-image: url(./assets/img/art.svg);
+        background-size: 80%;
+    }
+}
+
+@media screen and (max-width: $width_1250){
+    .main {
+        background-image: url(./assets/img/art_without_girl.svg);
+    }
+}
+
+@media screen and (max-width: $width_1100) {
+    .main {        
         background-size: 90%;
         padding-left: 60px ;  
         padding-top: 40px; 
@@ -151,4 +164,6 @@
         }
     }
 }
+
+
 
