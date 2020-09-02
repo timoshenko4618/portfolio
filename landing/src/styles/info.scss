@@ -1,0 +1,22 @@
+.info {
+    max-width: 1260px;
+    color: #fff;
+
+    &--title {
+        max-width: 739px;
+        margin-top: 180px;
+        color: #ff8791;
+        font-size: 38px;
+        font-weight: bold;
+    }
+
+    &--list {
+        font-size: 23px;
+        transform: scaleY(0.8);
+
+        & ul { 
+            list-style-type: none;
+            padding-inline-start: 0;
+        }
+    }
+}

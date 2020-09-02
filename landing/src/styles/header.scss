@@ -1,0 +1,22 @@
+.header {
+    color: #fff;
+
+    &--title {
+        margin-right: 60px;
+        margin-top: 6px;
+        font-size: 38px;
+        text-transform: uppercase;
+        transform: scaleY(1.8);
+    }
+
+    &--item {
+        margin-right: 35px;
+        font-size: 28px;
+        transform: scaleY(0.8);
+        margin-top: -11px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}

@@ -75,11 +75,11 @@
 @media screen and (max-width: $width_480){
     .main {
         min-width: 100vw;
-        height: 100vh;
-        padding: 0 20px;
-        background-size: 80%, 30%;
+        min-height: 100vh;
+        padding: 0 20px 225px;
+        background-size: 109%, 50%;
         background-repeat: no-repeat;
-        background-position: bottom left, top center;
+        background-position: bottom right, top left;
 
             &__button {
                 margin: 44px auto 0;
