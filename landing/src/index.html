@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;800&amp;display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" type="text/css" href="styles.min.css">
-    <title>landing</title>
+    <title>landing 5</title>
 </head>
 <body>
     <div class="main">
@@ -32,28 +31,34 @@
                 <div class="header header--item">
                     контакты
                 </div>
-            </div>
-            
-            <div class="info info--title">
-                Создаю работающие инструменты для Вашего бизнеса
-                <br> в условиях российских реалий 
-            </div>
-            <div class="info info--list">
-                <ul>
-                    <li>Лэндинги и сайты</li>                <li>Логотипы и маркетинг-киты</li>
-                    <li>Контекстная реклама</li>
-                </ul>
-            </div>
-            <div class="main__button">
-                <div class="button">
-                    подробнее
-                </div>
-            </div>      
-            <div class="info info--slogan">
-                разрабатываю не просто дизайн<br>
-                даю готовое решение
-            </div>
+            </div>           
         </div>
+        <div class="main__slider">
+            <div class="slider">
+                <input class="slider__input" checked="checked" type="radio" name="radio_select" id="img_1">
+                <input class="slider__input" type="radio" name="radio_select" id="img_2">
+                <input class="slider__input" type="radio" name="radio_select" id="img_3">
+
+                <div class="slider__gallery">
+                    <div class="slider__item">111</div>
+                    <div class="slider__item">222</div>
+                    <div class="slider__item">333</div>
+                </div>      
+                
+                <div class="slider__arrow-prev">
+                    <label class="slider__label slider__label--prev" for="img_1">a</label>
+                    <label class="slider__label slider__label--prev" for="img_2">b</label>
+                    <label class="slider__label slider__label--prev" for="img_3">c</label>
+                </div>
+
+                <div class="slider__arrow-next">
+                    <label class="slider__label slider__label--next" for="img_1">i</label>
+                    <label class="slider__label slider__label--next" for="img_2">ii</label>
+                    <label class="slider__label slider__label--next" for="img_3">iii</label>
+                </div>    
+                                  
+            </div>
+        </div> 
     </div>
 </body>
 </html>

@@ -1,5 +1,5 @@
 const gulp = require("gulp");
-//const gulpAutoprefixer = require("gulp-autoprefixer");
+const gulpAutoprefixer = require("gulp-autoprefixer");
 const gulpRename = require("gulp-rename");
 const gulpSass = require("gulp-sass");
 const gulpSourcemaps = require("gulp-sourcemaps");
@@ -15,7 +15,7 @@ module.exports = function buildStyles() {
       }).on("error", gulpSass.logError)
     )
     .pipe(gulpRename({ basename: "styles", suffix: ".min" }))
-    //.pipe(gulpAutoprefixer(["last 15 versions"]))
+    .pipe(gulpAutoprefixer(["last 15 versions"]))
     .pipe(
       gulpSourcemaps.write({
         includeContent: false,

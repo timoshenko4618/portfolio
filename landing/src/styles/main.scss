@@ -23,6 +23,17 @@
         max-width: 1260px;
         margin: 0 auto;
     }
+
+    &__slider {
+       width: 1300px;
+       height: 540px; 
+       margin-top: 58px;
+       margin-left: auto;
+       margin-right: auto; 
+       outline: 1px solid #080;   
+       position: relative;          
+    }
+
 }    
 
     
