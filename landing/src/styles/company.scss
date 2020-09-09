@@ -1,0 +1,32 @@
+.company {
+    display: grid;
+    grid-template-areas: "title info"
+                         "gallery info"
+                         "gallery info";
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 4fr;                     
+
+
+    &__title {
+      grid-area: title; 
+      font-size: 26px;
+      font-weight: bold; 
+      padding-left: 20px;
+      text-align: left;
+      transform: scaleY(0.75);
+    }
+
+    &__gallery {
+        grid-area: gallery;
+    }
+
+    &__info {
+        grid-area: info;
+        text-align: left;
+    }
+
+}  
+
+
+

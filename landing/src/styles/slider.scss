@@ -1,56 +1,60 @@
 .slider {    
-    display: flex;
-    flex-direction: row;
+    display: block;
+    // flex-direction: row;
     margin: 0;
-    position: absolute;
+    position: relative;
+    outline: 1px solid #080;  
 
     &__arrow-next {
-        display: flex;
-        flex-direction: row;
-        position: absolute;
-        right: -50px;
+        display: block;
     }
 
     &__arrow-prev {
-        display: flex;
-        flex-direction: row;        
-        position: absolute;
-        left: -50px;
+        display: block;
     }
 
     &__gallery {
-        display: flex;
-        flex-direction: row;
+        display: block;
     }
 
     &__item {
-        width: 200px;
-        height: 540px;
+        // width: 600px;
+        // height: 540px;
         border-radius: 30px;
         background: #e8e3ea;
-        margin-right: 96px;
+        // margin-right: 96px;
         text-align: center;
         visibility: hidden;   
+        position: absolute;
+        opacity: 0;
+        transition: 0.5s;
         
         &:last-child {
             margin-right: 0;
         }  
-    }          
-
+    }        
 
     &__label {
         color: #fff;
         cursor: pointer;
         visibility: hidden;
         font-size: 80px;
+        position: absolute;
+        top: 200px;
 
         &--next {
             color: rgb(229, 255, 0);
+            right: -50px;
         }  
         
         &--prev {
             color: rgb(255, 0, 55);
+            left: -50px;
         }
+    }
+
+    &__company-input {
+        // display: none;
     }
 
     &__input {
@@ -71,6 +75,7 @@
         @for $i from 1 through 3 {
             &:nth-child(#{$i}):checked ~ .slider__gallery .slider__item:nth-child(#{$i}) {
                 visibility: visible;
+                opacity: 1;
             } 
         }  
     }   
