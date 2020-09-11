@@ -5,7 +5,17 @@
                          "gallery info";
 
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 4fr;                     
+    grid-template-rows: 1fr 4fr;
+    
+    &__slider-item {
+        display: none;
+    }
+
+    @for $i from 1 through 3 {
+        &__slider-input:nth-child(#{$i}):checked ~  &__slider &__slider-item:nth-child(#{$i}) {
+            display: block;
+        }
+    }   
 
 
     &__title {
@@ -24,9 +34,10 @@
     &__info {
         grid-area: info;
         text-align: left;
-    }
+    }    
+}
 
-}  
+ 
 
 
 
