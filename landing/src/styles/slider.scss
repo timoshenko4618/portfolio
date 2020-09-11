@@ -42,14 +42,18 @@
         position: absolute;
         top: 200px;
 
+        & img {
+            width: 100px;            
+        }
+
         &--next {
             color: rgb(229, 255, 0);
-            right: -50px;
+            right: -150px;
         }  
         
         &--prev {
             color: rgb(255, 0, 55);
-            left: -50px;
+            left: -150px;
         }
     }
 
