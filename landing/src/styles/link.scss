@@ -1,7 +1,7 @@
 .link {
     position: relative;
     display: inline-block;
-    color: #9754a9;
+    
     text-decoration: none;
 
     &::before {
@@ -22,6 +22,28 @@
         width: 100%;
     }
 
+    &--item {
+        margin-right: 35px;
+        font-size: 28px;
+        transform: scaleY(0.8);
+        margin-top: -11px;
+        color: #9754a9;
 
-   
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    &--title {
+        margin-right: 60px;
+        margin-top: 6px;
+        font-size: 38px;
+        color:  #fff;
+        text-transform: uppercase;
+        transform: scaleY(1.8);
+
+        &::before{
+            border: none;
+            transition: none;
+        }
+    }   
 }
