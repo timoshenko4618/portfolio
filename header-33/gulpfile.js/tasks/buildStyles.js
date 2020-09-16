@@ -7,7 +7,8 @@ const gulpSourcemaps = require("gulp-sourcemaps");
 const paths = require("../paths.js");
 
 module.exports = function buildStyles() {
-  return gulp.src(paths.styles.srcMainFile)
+  return gulp
+    .src(paths.styles.srcMainFile)
     .pipe(gulpSourcemaps.init())
     .pipe(
       gulpSass({
