@@ -1,29 +1,24 @@
 .link {
+  display: block;
+  width: 180px;
+  margin-right: 24px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  svg {
     display: block;
-    width: 180px;
-    margin-right: 24px;
-
-    &:last-child {
-        margin-right: 0;
-    }
-
-    svg {
-        display: block;
-    }
+  }
 }
 
 @media screen and (max-width: $width_480) {
-    .link {
-        margin-right: 0;
-        margin-bottom: 24px;
+  .link {
+    margin-right: 0;
+    margin-bottom: 24px;
 
-        &:last-child {
-            margin-bottom: 0;
-        }
-
+    &:last-child {
+      margin-bottom: 0;
     }
+  }
 }
-
-
-
-
