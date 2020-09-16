@@ -1,13 +1,14 @@
-.main{
+.main {
   // border: solid 4px #00d;
   // background-color: #aaa;
   margin: 10px;
   display: grid;
   grid-template-rows: 144px 300px 300px;
   grid-template-columns: repeat(4, 300px);
-  grid-template-areas:  "title title  head  head"
-                        "title title box1  box2"
-                        "box3  box4  box5  box6";
+  grid-template-areas:
+    "title title  head  head"
+    "title title box1  box2"
+    "box3  box4  box5  box6";
 }
 
 .main__header {
@@ -17,23 +18,23 @@
   justify-content: flex-end;
 }
 
-.main__header-logo{
+.main__header-logo {
   padding-top: 4px;
 }
 
-.main__header-phone-n-table-wrap{
+.main__header-phone-n-table-wrap {
   display: flex;
   flex-direction: row;
 }
 
-.main__header-phone-wrap{  
+.main__header-phone-wrap {
   padding-left: 14px;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
 
-.main__header-phone-number{
+.main__header-phone-number {
   font-family: Poppins;
   font-style: normal;
   font-weight: normal;
@@ -45,7 +46,7 @@
   color: rgba(0, 0, 0, 0.87);
 }
 
-.main__header-phone-subtitle{
+.main__header-phone-subtitle {
   margin-top: -7px;
   font-family: Poppins;
   font-style: normal;
@@ -58,16 +59,16 @@
   color: rgba(0, 0, 0, 0.38);
 }
 
-.main__header-table-wrap{
+.main__header-table-wrap {
   width: 180px;
   height: 48px;
   margin-left: 80px;
   margin-top: 10px;
-  border: 1px solid #00C4AA;
+  border: 1px solid #00c4aa;
   padding: 15px 38px 17px;
 }
 
-.main__header-table-text{
+.main__header-table-text {
   font-family: Poppins;
   font-style: normal;
   font-weight: 500;
@@ -87,7 +88,7 @@
   flex-direction: column;
 }
 
-.main__title-logo{
+.main__title-logo {
   //padding: 0;
 }
 
@@ -104,7 +105,7 @@
   color: rgba(0, 0, 0, 0.6);
 }
 
-.main__title-header2{
+.main__title-header2 {
   margin-top: 6px;
   font-family: Poppins;
   font-style: normal;
@@ -114,10 +115,10 @@
   /* identical to box height */
 
   letter-spacing: -0.5px;
-  color: #03DAC4;
+  color: #03dac4;
 }
 
-.main__title-header3{
+.main__title-header3 {
   width: 384px;
   height: 74px;
   margin-top: -10px;
@@ -128,8 +129,8 @@
   /* identical to box height */
 
   letter-spacing: 0.25px;
-  color: #03DAC4;
-  border-bottom: solid 16px  #71EFDF;;
+  color: #03dac4;
+  border-bottom: solid 16px #71efdf;
 }
 
 .main__box1 {
@@ -156,20 +157,20 @@
   grid-area: box6;
 }
 
-
-@media screen and (max-width: $width_480){
-  .main{
+@media screen and (max-width: $width_480) {
+  .main {
     margin: 10px;
     display: grid;
     grid-template-rows: 220px repeat(6, 100px);
     grid-template-columns: 1fr 1fr;
-    grid-template-areas:  "title  head"
-                          "box1   box1"
-                          "box4   box4"
-                          "box6   box6"
-                          "box2   box2"
-                          "box3   box3"
-                          "box5   box5";
+    grid-template-areas:
+      "title  head"
+      "box1   box1"
+      "box4   box4"
+      "box6   box6"
+      "box2   box2"
+      "box3   box3"
+      "box5   box5";
   }
 
   .main__title-header1 {
@@ -177,16 +178,16 @@
     margin-top: 0;
     line-height: 29px;
   }
-  
-  .main__title-header2{
+
+  .main__title-header2 {
     font-size: 50px;
     line-height: 35px;
   }
-  
-  .main__title-header3{
+
+  .main__title-header3 {
     width: max-content;
     height: auto;
-    margin: 3px 0 0;    
+    margin: 3px 0 0;
     font-size: 30px;
   }
 
@@ -194,33 +195,31 @@
     height: 50%;
   }
 
-  .main__header-phone-n-table-wrap{
+  .main__header-phone-n-table-wrap {
     display: flex;
     flex-direction: column;
   }
-  
-  .main__header-phone-subtitle{
+
+  .main__header-phone-subtitle {
     font-size: 20px;
-    line-height: 25px;    
+    line-height: 25px;
   }
-  
-  .main__header-table-wrap{    
+
+  .main__header-table-wrap {
     padding: 15px 0 17px;
   }
 
-  .main__header-table-text{
+  .main__header-table-text {
     font-family: Poppins;
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
     line-height: 20px;
     /* identical to box height, or 119% */
-  
+
     text-align: center;
     letter-spacing: 1.25px;
     text-transform: uppercase;
     color: rgba(0, 0, 0, 0.87);
   }
 }
-
-
