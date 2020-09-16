@@ -1,85 +1,79 @@
 .company {
-    display: grid;
-    grid-template-areas: "title info"
-                         "gallery info"
-                         "gallery info";
+  display: grid;
+  grid-template-areas:
+    "title info"
+    "gallery info"
+    "gallery info";
 
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 4fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 4fr;
 
-    &__controls {
-        display: flex;
-        justify-content: center;
+  &__controls {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__gallery {
+    grid-area: gallery;
+
+    & input {
+      display: none;
+    }
+  }
+
+  &__info {
+    grid-area: info;
+    text-align: left;
+  }
+
+  &__label {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border: 1px solid #f80;
+    border-radius: 50%;
+    background: #fff;
+
+    &:last-child {
+      margin-right: 0;
     }
 
-    &__gallery {
-        grid-area: gallery;
-        
-        & input {
-            display: none;
-        }
+    // &::before {
+    //     content: " ";
+    //     display: none;
+    //     background: #f80;
+    //     z-index: 1;
+    // }
+  }
+
+  @for $i from 1 through 3 {
+    &__slider-input:nth-child(#{$i}):checked ~ &__slider &__slider-item:nth-child(#{$i}) {
+      display: block;
     }
+  }
 
-    &__info {
-        grid-area: info;
-        text-align: left;
-    }    
-
-    &__label {
-        width: 20px;
-        height: 20px;
-        margin-right: 10px;
-        border: 1px solid #f80;
-        border-radius: 50%;
-        background: #fff;
-
-        &:last-child {
-            margin-right: 0;
-        }
-
-        // &::before {
-        //     content: " ";
-        //     display: none;
-        //     background: #f80;
-        //     z-index: 1;
-        // }
+  @for $i from 1 through 3 {
+    &__slider-input:nth-child(#{$i}):checked ~ &__controls &__label:nth-child(#{$i})::before {
+      display: block;
+      content: "";
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: #f80;
+      z-index: 1;
     }
-    
+  }
 
-    @for $i from 1 through 3 {
-        &__slider-input:nth-child(#{$i}):checked ~  &__slider &__slider-item:nth-child(#{$i}) {
-            display: block;
-        }
-    }   
+  &__slider-item {
+    display: none;
+  }
 
-    @for $i from 1 through 3 {
-        &__slider-input:nth-child(#{$i}):checked ~ 
-        &__controls &__label:nth-child(#{$i})::before {
-            display: block;
-            content: "";
-            width: 20px;
-            height: 20px;
-            border-radius: 50%;
-            background: #f80;
-            z-index: 1;
-        }
-    }  
-
-    &__slider-item {
-        display: none;
-    }
-
-    &__title {
-        grid-area: title; 
-        font-size: 26px;
-        font-weight: bold; 
-        padding-left: 20px;
-        text-align: left;
-        transform: scaleY(0.75);
-      }
+  &__title {
+    grid-area: title;
+    font-size: 26px;
+    font-weight: bold;
+    padding-left: 20px;
+    text-align: left;
+    transform: scaleY(0.75);
+  }
 }
-
- 
-
-
-
