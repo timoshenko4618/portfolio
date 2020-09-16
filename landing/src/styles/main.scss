@@ -29,11 +29,20 @@
   &__header {
     display: flex;
     padding-top: 30px;
+    flex-direction: row;
   }
 
   &__info {
     max-width: 1260px;
     margin: 0 auto;
+  }
+
+  &__logo {
+    display: block;
+  }
+
+  &__menu {
+    display: flex;
   }
 
   &__slider {
