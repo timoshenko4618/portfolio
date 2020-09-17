@@ -36,4 +36,28 @@
     text-align: end;
     text-transform: uppercase;
   }
+
+  &__text {   
+    font-family: 'Play', sans-serif;
+    font-size: 22px;
+    width: 60%;
+
+    & ul {
+        padding-inline-start: 0;
+        list-style-type: none;
+        list-style-position: inside;
+      }
+
+    &--upper {
+      text-align: left;      
+    }
+
+    &--lower {
+      width: 80%;
+      margin-top: 42px;
+      margin-right: 0;
+      margin-left: auto;
+      text-align: right;
+    }
+  }
 }

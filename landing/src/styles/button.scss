@@ -1,5 +1,6 @@
 $height: 2.8em;
-$width: 10em;
+$width_10: 10em;
+$width_18: 18em;
 $button-color: #5b97ea;
 
 @mixin center {
@@ -21,7 +22,7 @@ $button-color: #5b97ea;
     border: 1px solid $button-color;
     border-radius: 24px;
     height: $height;
-    width: $width;
+    width: $width_10;
     padding: 0;
     outline: none;
     overflow: hidden;
@@ -37,10 +38,10 @@ $button-color: #5b97ea;
       content: "";
       border-radius: 50%;
       display: block;
-      width: $width * 2;
-      height: $width * 2;
-      line-height: $width * 2;
-      left: -$width/2;
+      width: $width_10 * 2;
+      height: $width_10 * 2;
+      line-height: $width_10 * 2;
+      left: -$width_10/2;
       text-align: center;
       transition: box-shadow 0.5s ease-out;
       z-index: -1;
@@ -50,8 +51,41 @@ $button-color: #5b97ea;
       color: #fff;
 
       &::before {
-        box-shadow: inset 0 0 0 $width rgba($button-color, 1);
+        box-shadow: inset 0 0 0 $width_10 rgba($button-color, 1);
       }
+    }
+
+    &-about-upper {
+      width: $width_18;
+      margin-left: 0;
+
+      &::before {        
+      width: $width_18 * 2;
+      height: $width_18 * 2;
+      line-height: $width_18 * 2;
+      left: -$width_18/2;
+      }
+      
+      &:hover::before {
+          box-shadow: inset 0 0 0 $width_18 rgba($button-color, 1);
+        }      
+    }
+
+    
+    &-about-lower {
+      width: $width_18;
+      margin-right: 0;
+
+      &::before {        
+      width: $width_18 * 2;
+      height: $width_18 * 2;
+      line-height: $width_18 * 2;
+      left: -$width_18/2;
+      }
+      
+      &:hover::before {
+          box-shadow: inset 0 0 0 $width_18 rgba($button-color, 1);
+        }      
     }
   }
 
