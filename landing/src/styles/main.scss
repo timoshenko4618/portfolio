@@ -36,6 +36,26 @@
       margin-top: 20px;
       padding-right: 50px;
     }
+
+    &--works-ads {
+      bottom: -41px;
+      left: -80px;
+    }
+
+    &--works-design {
+      bottom: -40px;
+      left: 120px;
+    }  
+
+    &--works-polygraphy {
+      bottom: -137px;
+      left: 49px;
+    }
+
+    &--works-sites {
+      bottom: -76px;
+      left: -11px;
+    }
   }
 
   &__header {
@@ -78,7 +98,7 @@
   &__works {
     display: flex;
     flex-direction: column;
-    padding-top: 4em;
+    padding-top: 3em;
     padding-right: 100px;
   }
 }

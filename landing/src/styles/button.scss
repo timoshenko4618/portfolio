@@ -1,6 +1,7 @@
 $height: 2.8em;
 $width_10: 10em;
 $width_18: 18em;
+$width_15: 15em;
 $button-color: #5b97ea;
 
 @mixin center {
@@ -55,38 +56,68 @@ $button-color: #5b97ea;
       }
     }
 
-    &-about-upper {
-      width: $width_18;
-      margin-left: 0;
-
-      &::before {        
-      width: $width_18 * 2;
-      height: $width_18 * 2;
-      line-height: $width_18 * 2;
-      left: -$width_18/2;
-      }
-      
-      &:hover::before {
-          box-shadow: inset 0 0 0 $width_18 rgba($button-color, 1);
-        }      
-    }
-
-    
+    &-about-upper,
     &-about-lower {
       width: $width_18;
-      margin-right: 0;
 
       &::before {        
-      width: $width_18 * 2;
-      height: $width_18 * 2;
-      line-height: $width_18 * 2;
-      left: -$width_18/2;
+        width: $width_18 * 2;
+        height: $width_18 * 2;
+        line-height: $width_18 * 2;
+        left: -$width_18/2;
       }
       
       &:hover::before {
           box-shadow: inset 0 0 0 $width_18 rgba($button-color, 1);
-        }      
+        }  
     }
+            
+    &-about-upper {
+      margin-left: 0;
+    }  
+
+    &-about-lower {
+      margin-right: 0;
+    }       
+
+
+
+    @mixin button-blue-animated($local_width) {
+      width: $local_width;
+      background: #fff;
+      font-size: 20px;
+      font-weight: bold;
+      border: 3px solid #5b97ea;
+
+      &::before {        
+        width: $local_width * 2;
+        height: $local_width * 2;
+        line-height: $local_width * 2;
+        left: -$local_width/2;
+      }
+      
+      &:hover::before {
+          box-shadow: inset 0 0 0 $local_width rgba($button-color, 1);
+        }
+    }
+
+    &-works-ads {
+      @include button-blue-animated(18em);
+    }
+
+    &-works-design {     
+      @include button-blue-animated(15em);
+    }
+
+    &-works-polygraphy {    
+      @include button-blue-animated(22em);
+    }
+
+    &-works-sites {       
+      @include button-blue-animated(26em);
+    }
+
+
   }
 
   &--portfolio {
