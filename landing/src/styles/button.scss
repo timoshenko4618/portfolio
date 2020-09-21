@@ -118,21 +118,34 @@ $button-color: #5b97ea;
   }
 
   &--order {   
-    @include center;
-    border: 1px solid $button-color;
-    border-radius: 24px;
-    height: $height;
-    padding: 0;
-    outline: none;
-    overflow: hidden;
-    color: $button-color;
-    transition: color 0.3s 0.1s ease-out;
-    text-align: center;
-    line-height: 250%;
-    font-size: 30px;
-    z-index: 0; 
-    
-    @include button-blue-animated(20em);
+    margin-top: 54px;
+    padding: 17px;
+    text-align: left;
+    font-size: 24px;
+    transition: 0.5s;
+    background-size: 200% auto;
+    border: solid 1px #fff;
+    color: white;
+    /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2);*/
+    box-shadow: 0 0 20px #eee;
+    border-radius: 40px;
+    background-image: linear-gradient(to left,#0d997d 0%, #78d7fd 51%, #0d997d 100%);
+
+    &::before {
+      position: absolute;
+      right: 112px;
+      // display: block;
+      content: "";
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: radial-gradient(at 70% 70%, rgb(247, 115, 63) 0%, rgb(246, 227, 54) 60%, rgb(250, 117, 206) 100%);
+      z-index: 1;
+    }
+
+    &:hover {
+      background-position: right center;
+    }
   }
 
   &--portfolio {
