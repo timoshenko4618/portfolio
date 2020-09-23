@@ -1,7 +1,7 @@
 .slider {
   display: block;
   margin: 0;
-  position: relative;
+  position: relative;  
 
   &__arrow-next {
     display: block;
@@ -14,7 +14,7 @@
   &__gallery {
     display: block;
     position: relative;
-    height: 580px;
+    height: 615px;
     overflow: hidden;
   }
 

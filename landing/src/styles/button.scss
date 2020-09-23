@@ -1,7 +1,4 @@
-$height: 2.8em;
-// $width_10: 10em;
-// $width_18: 18em;
-// $width_15: 15em;
+$height: 2.6em;
 $blue: #5b97ea;
 $white : #fff;
 $green: #0a0;
@@ -68,14 +65,14 @@ $green: #0a0;
             
     &-about-upper {
       margin-left: 0;      
-      @include button-blue-animated(18em, $blue,  $white, $blue, $blue, $white);
+      @include button-blue-animated(18em, $blue,  $white, $blue, rgb(70, 70, 195), rgb(245, 186, 78));
       font-size: 20px;
       font-weight: normal;
     }  
 
     &-about-lower {
       margin-right: 0;      
-      @include button-blue-animated(18em, $blue,  $white, $blue, $blue, $white);
+      @include button-blue-animated(18em, $blue,  $white, $blue, rgb(70, 70, 195), rgb(245, 186, 78));
       font-size: 20px;
       font-weight: normal;
     }       
@@ -88,6 +85,10 @@ $green: #0a0;
     &-works-design {     
       @include button-blue-animated(15em, $blue,  $white, $blue, $blue, $white);
       font-size: 17px;
+
+      p {
+        margin-top: 0;
+      }
     }
 
     &-works-polygraphy {    
