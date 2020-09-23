@@ -1,8 +1,10 @@
 $height: 2.8em;
-$width_10: 10em;
-$width_18: 18em;
-$width_15: 15em;
-$button-color: #5b97ea;
+// $width_10: 10em;
+// $width_18: 18em;
+// $width_15: 15em;
+$blue: #5b97ea;
+$white : #fff;
+$green: #0a0;
 
 @mixin center {
   position: absolute;
@@ -13,23 +15,45 @@ $button-color: #5b97ea;
   margin: auto;
 }
 
-@mixin button-blue-animated($local_width) {
-  width: $local_width;
-  background: #fff;
-  font-size: 20px;
+@mixin button-blue-animated($width, $button-color, $text-color, $background-color, $hover-text-color, $hover-background-color) {
+  border: 1px solid $button-color;
+  border-radius: $height/2;
+  height: $height;
+  width: $width;
+  background: $background-color;
   font-weight: bold;
-  border: 3px solid #5b97ea;
+  border: 3px solid $button-color;  
+  padding: 0;
+  outline: none;
+  overflow: hidden;
+  color: $text-color;
+  transition: color 0.3s 0.1s ease-out;
+  text-align: center;
+  line-height: 250%;
+  z-index: 0;
 
-  &::before {        
-    width: $local_width * 2;
-    height: $local_width * 2;
-    line-height: $local_width * 2;
-    left: -$local_width/2;
+  &::before {
+    @include center;
+    content: "";
+    border-radius: 50%;
+    display: block;        
+    width: $width * 2;
+    height: $width * 2;
+    line-height: $width * 2;
+    left: -$width/2;
+    text-align: center;
+    transition: box-shadow 0.5s ease-out;
+    z-index: -1;
   }
+
+  &:hover {
+    color: $hover-text-color;   
   
-  &:hover::before {
-      box-shadow: inset 0 0 0 $local_width rgba($button-color, 1);
-    }
+    &::before {
+        box-shadow: inset 0 0 0 $width rgba($hover-background-color, 1);
+      }
+  }    
+
 }
 
 .button {
@@ -39,80 +63,41 @@ $button-color: #5b97ea;
 
   &--main {
     @include center;
-    border: 1px solid $button-color;
-    border-radius: 24px;
-    height: $height;
-    width: $width_10;
-    padding: 0;
-    outline: none;
-    overflow: hidden;
-    color: $button-color;
-    transition: color 0.3s 0.1s ease-out;
-    text-align: center;
-    line-height: 250%;
+    @include button-blue-animated(10em, $blue, $blue, transparent, $white, $blue);
     font-size: 30px;
-    z-index: 0;
-
-    &::before {
-      @include center;
-      content: "";
-      border-radius: 50%;
-      display: block;
-      width: $width_10 * 2;
-      height: $width_10 * 2;
-      line-height: $width_10 * 2;
-      left: -$width_10/2;
-      text-align: center;
-      transition: box-shadow 0.5s ease-out;
-      z-index: -1;
-    }
-
-    &:hover {
-      color: #fff;
-
-      &::before {
-        box-shadow: inset 0 0 0 $width_10 rgba($button-color, 1);
-      }
-    }
-
-    &-about-upper,
-    &-about-lower {
-      width: $width_18;
-
-      &::before {        
-        width: $width_18 * 2;
-        height: $width_18 * 2;
-        line-height: $width_18 * 2;
-        left: -$width_18/2;
-      }
-      
-      &:hover::before {
-          box-shadow: inset 0 0 0 $width_18 rgba($button-color, 1);
-        }  
-    }
             
     &-about-upper {
-      margin-left: 0;
+      margin-left: 0;      
+      @include button-blue-animated(18em, $blue,  $white, $blue, $blue, $white);
+      font-size: 20px;
+      font-weight: normal;
     }  
 
     &-about-lower {
-      margin-right: 0;
+      margin-right: 0;      
+      @include button-blue-animated(18em, $blue,  $white, $blue, $blue, $white);
+      font-size: 20px;
+      font-weight: normal;
     }       
 
     &-works-ads {
-      @include button-blue-animated(18em);
+      @include button-blue-animated(18em, $blue,  $white, $blue, $blue, $white);
+      font-size: 17px;
     }
 
     &-works-design {     
-      @include button-blue-animated(15em);
+      @include button-blue-animated(15em, $blue,  $white, $blue, $blue, $white);
+      font-size: 17px;
     }
 
     &-works-polygraphy {    
-      @include button-blue-animated(22em);
+      @include button-blue-animated(22em, $blue,  $white, $blue, $blue, $white);
+      font-size: 17px;
     }
 
     &-works-sites {       
-      @include button-blue-animated(26em);
+      @include button-blue-animated(26em, $blue,  $white, $blue, $blue, $white);
+      font-size: 17px;
     }
 
   }
