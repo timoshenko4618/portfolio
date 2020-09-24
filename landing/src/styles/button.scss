@@ -58,6 +58,12 @@ $green: #0a0;
   text-decoration: none;
   cursor: pointer;
 
+  &--call {
+    @include center;
+    @include button-blue-animated(15em, $blue,  $white, $blue, $blue, $white);
+      font-size: 26px;
+  }
+
   &--main {
     @include center;
     @include button-blue-animated(10em, $blue, $blue, transparent, $white, $blue);
@@ -101,6 +107,24 @@ $green: #0a0;
       font-size: 17px;
     }
 
+  }
+
+  &--ask {   
+    margin-top: 0;
+    padding: 12px;
+    text-align: left;
+    font-size: 24px;
+    transition: 0.5s;
+    background-size: 200% auto;
+    border: solid 1px #fff;
+    color: white;
+    box-shadow: 0 0 10px #eee;
+    border-radius: 40px;
+    background-image: linear-gradient(to left,#0d997d 0%, #78d7fd 51%, #0d997d 100%);
+
+    &:hover {
+      background-position: right center;
+    }
   }
 
   &--order {   
