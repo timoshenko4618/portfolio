@@ -1,0 +1,50 @@
+.prices {
+    display: grid;
+    grid-template-areas: "title form"
+                         "pricelist form ";
+    // width: 100%;
+    grid-template-columns: 62% 38%;
+    grid-template-rows: 15% 85%;
+    gap: 20px;
+    margin-top: 50px;
+    margin-left: 20px;
+    font-family: 'Play', sans-serif;
+    font-size: 12px;
+
+    &__title {
+        grid-area: title;
+        color: #ff8791;
+        font-size: 2em;
+        font-style: italic;
+
+        span {
+            margin-right: 20px;
+            font-size: 2em;
+            font-weight: bold;
+            font-style: normal;
+            color: #fff;
+        }
+    }
+
+    &__form {
+        grid-area: form;
+    }
+
+    &__list {
+        grid-area: pricelist;
+        border-radius: 70px;
+        padding: 40px 30px;
+        background: rgba($color: #fff, $alpha: 0.5);
+
+        &-item {
+            display: grid;
+        }
+        
+
+    }
+    
+    &__name {
+        color: #fff;
+        font-size: 2em;
+    }
+}
