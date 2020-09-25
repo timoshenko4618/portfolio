@@ -12,6 +12,9 @@
   }
 
   &__feedback-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: relative;
     width: 18em;
     height: 35em;
@@ -38,8 +41,8 @@
     &:hover {
       opacity: 1;
 
-      .button--feedback-item {
-        opacity: 1;
+      .feedback__item-button {
+        display: block;
       }
 
     }

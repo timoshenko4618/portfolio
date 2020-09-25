@@ -33,8 +33,32 @@
         }
     }
 
+    &__item-button {
+        display: none;
+        text-transform: uppercase;
+        text-decoration: none;
+        cursor: pointer;
+        position: absolute;
+        bottom: -12px;
+        padding: 10px 20px;
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+        transition: 0.5s;
+        background-size: 200% auto;
+        color: white;
+        border-radius: 20px;
+        opacity: 1;
+        background-image: linear-gradient(to right, #33ebcc 0%, #44a8eb 51%, #33ebcc 100%);
+
+        &:hover {
+        background-position: right center;
+        }
+    }
+
     &__item-text {
         display: block;
+        font-size: 1.1em;
     }
 
     &__slider {
@@ -50,6 +74,7 @@
         font-family: 'Play', sans-serif;      
         text-align: center;
         font-size: 43px;
+        font-weight: bold;
         color:  #ff8791;
     }
 }
