@@ -58,6 +58,22 @@ $green: #0a0;
   text-decoration: none;
   cursor: pointer;
 
+  &--about-upper {
+    margin-left: 0; 
+    @include center;     
+    @include button-blue-animated(20em, $blue,  $white, $blue, rgb(70, 70, 195), rgb(245, 186, 78));
+    font-size: 20px;
+    font-weight: normal;
+  }  
+
+  &--about-lower {
+    margin-right: 0;
+    @include center;      
+    @include button-blue-animated(18em, $blue,  $white, $blue, rgb(70, 70, 195), rgb(245, 186, 78));
+    font-size: 20px;
+    font-weight: normal;
+  }
+
   &--call {
     @include center;
     @include button-blue-animated(15em, $blue,  $white, $blue, $blue, $white);
@@ -69,19 +85,7 @@ $green: #0a0;
     @include button-blue-animated(10em, $blue, $blue, transparent, $white, $blue);
     font-size: 30px;
             
-    &-about-upper {
-      margin-left: 0;      
-      @include button-blue-animated(18em, $blue,  $white, $blue, rgb(70, 70, 195), rgb(245, 186, 78));
-      font-size: 20px;
-      font-weight: normal;
-    }  
-
-    &-about-lower {
-      margin-right: 0;      
-      @include button-blue-animated(18em, $blue,  $white, $blue, rgb(70, 70, 195), rgb(245, 186, 78));
-      font-size: 20px;
-      font-weight: normal;
-    }       
+       
 
     &-works-ads {
       @include button-blue-animated(18em, $blue,  $white, $blue, $blue, $white);

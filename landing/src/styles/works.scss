@@ -3,6 +3,34 @@
     border-radius: 10px;
     padding: 10px 30px 44px;
 
+    &__button {
+        position: relative;
+
+        &-ads {
+            position: relative;
+            bottom: -41px;
+            left: -80px;
+          }
+      
+          &-design {
+            position: relative;  
+            bottom: -40px;
+            left: 120px;
+          }  
+      
+          &-polygraphy {
+            position: relative;  
+            bottom: -137px;
+            left: 49px;
+          }
+      
+          &-sites {
+            position: relative;  
+            bottom: -76px;
+            left: -11px;
+          }
+    }
+
     &__cards {
         margin-top: 50px;
         position: relative;
@@ -47,11 +75,10 @@
 
     
     &__title {
-        grid-area: title;  
         font-family: 'Play', sans-serif;      
         text-align: center;
         font-size: 37px;
-        color: #fff;
+        color:  #ff8791;
     }
 
 

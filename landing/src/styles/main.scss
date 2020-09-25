@@ -11,18 +11,6 @@
   &__button {
     position: relative;
 
-    &--about-page-upper {
-      margin: 30px auto 0 0;
-      width: 10em;
-      height: 2.8em;
-    }
-
-    &--about-page-lower {
-      margin: 30px 0 0 auto;
-      width: 10em;
-      height: 2.8em;
-    }
-
     &--main-page {
       margin-top: 63px;
       width: 10em;
@@ -35,27 +23,7 @@
       align-items: flex-end;
       margin-top: 20px;
       padding-right: 50px;
-    }
-
-    &--works-ads {
-      bottom: -41px;
-      left: -80px;
-    }
-
-    &--works-design {
-      bottom: -40px;
-      left: 120px;
-    }  
-
-    &--works-polygraphy {
-      bottom: -137px;
-      left: 49px;
-    }
-
-    &--works-sites {
-      bottom: -76px;
-      left: -11px;
-    }
+    }    
   }
 
   &__header {
@@ -98,7 +66,6 @@
   &__works {
     display: flex;
     flex-direction: column;
-    padding-top: 3em;
-    padding-right: 100px;
+    padding: 3em 30px;
   }
 }

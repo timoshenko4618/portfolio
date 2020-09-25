@@ -1,0 +1,30 @@
+.feedback {
+
+    &__client-face {
+        margin-top: -3em;
+        text-align: center;
+        
+
+        img {
+            width: 7em;
+            height: 7em;
+            border-radius: 2.5em;
+            box-shadow: 0 0 2em rgba(0,0,0,0.5);
+        }
+    }
+
+    &__slider {
+        position: relative;
+        width: 1200px;
+        margin-top: 58px;
+        margin-left: auto;
+        margin-right: auto;       
+    }
+
+    &__title {
+        font-family: 'Play', sans-serif;      
+        text-align: center;
+        font-size: 37px;
+        color:  #ff8791;
+    }
+}
