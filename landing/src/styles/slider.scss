@@ -12,6 +12,7 @@
   }
 
   &__feedback-item {
+    position: relative;
     width: 18em;
     height: 35em;
     margin-right: 1em;
@@ -21,7 +22,9 @@
     background: rgba($color: #fff, $alpha: 1.0);
     opacity: 0.5;
     border-radius: 3.5em;
+    font-size: 1em;
     font-weight: normal;
+    transition: 0.5s;
 
     h1 {
       font-size: 1.5em;
@@ -34,6 +37,11 @@
 
     &:hover {
       opacity: 1;
+
+      .button--feedback-item {
+        opacity: 1;
+      }
+
     }
 
 

@@ -80,6 +80,40 @@ $green: #0a0;
       font-size: 26px;
   }
 
+  &--feedback {
+
+    &-footer {
+      padding: 15px;
+      text-align: center;
+      font-size: 18px;
+      transition: 0.5s;
+      background-size: 200% auto;
+      color: white;
+      border-radius: 20px;
+      border: 1px solid #fff;
+      background-image: linear-gradient(to right, #e89a59 0%, #99238b 51%, #e89a59 100%);
+
+      &:hover {
+      background-position: right center;
+      }
+    }
+
+    &-item {
+      position: absolute;
+      bottom: 0;
+      padding: 10px 0;
+      text-align: center;
+      font-size: 18px;
+      transition: 0.5s;
+      background-size: 200% auto;
+      color: white;
+      border-radius: 20px;
+      background: #0a0;
+      opacity: 0;
+    }    
+
+  }
+
   &--main {
     @include center;
     @include button-blue-animated(10em, $blue, $blue, transparent, $white, $blue);
