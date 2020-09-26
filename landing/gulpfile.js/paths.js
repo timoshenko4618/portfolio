@@ -6,7 +6,7 @@ const cwd = slash(processCwd);
 
 const paths = {
   assets: {
-    srcFiles: `${cwd}/src/assets/**/*.{svg,jpg}`,
+    srcFiles: `${cwd}/src/assets/**/*.{svg,jpg,gif}`,
     distFolder: `${cwd}/dist/assets`
   },
 

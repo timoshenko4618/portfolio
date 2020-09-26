@@ -38,10 +38,9 @@
 
     &-about{
       display: flex;
-      flex-direction: column;      
-      // position: relative;
+      flex-direction: column;  
       padding-top: 100px;
-      background: url(assets/img/portrait.gif) no-repeat 100% 30px;
+      background: url(assets/img/portrait.gif)  no-repeat 100% 30px;
       background-size: 480px;
     }
   }
